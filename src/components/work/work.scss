@@ -5,6 +5,7 @@
 
   p {
     text-align: center;
+    line-height: 1.5rem;
   }
 }
 .githubrepos {
@@ -37,8 +38,9 @@
 @media screen and (max-width: 768px) {
   .githubrepos {
     flex-direction: column;
+
     .repo-item {
-      width: 80%; // fix margin
+      width: auto;
     }
   }
 }

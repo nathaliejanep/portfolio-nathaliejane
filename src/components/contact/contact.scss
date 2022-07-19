@@ -1,0 +1,86 @@
+.info {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  display: block;
+  text-align: center;
+
+  svg {
+    font-size: 4rem;
+  }
+}
+
+.right_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+
+  .form {
+    box-sizing: border-box;
+    border-radius: 1rem;
+    width: 80%;
+    padding: 1rem;
+    box-shadow: 0 0 40px -10px rgb(96, 88, 88);
+
+    &-input {
+      width: 90%;
+      background: none;
+      padding: 1rem;
+      border: none;
+      border-bottom: 1px solid #000;
+      font-size: 1rem;
+
+      &::placeholder {
+        color: #666;
+      }
+
+      &:focus {
+        border-bottom-color: #9396a0;
+        outline: none;
+      }
+    }
+    &--textarea {
+      width: 90%;
+      background: none;
+      padding: 1rem;
+      border: none;
+      border-bottom: 1px solid #000;
+      font-size: 1rem;
+    }
+
+    &-button {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      font-weight: 500;
+      font-size: 1.3rem;
+      letter-spacing: 1px;
+      text-decoration: none;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      padding: 1rem;
+      border: 1px solid #cbc3e3;
+      background: linear-gradient(
+          to left,
+          rgba(255, 255, 255, 0.217) 50%,
+          #cbc3e3 50%
+        )
+        right;
+      background-size: 200%;
+      transition: 0.5s ease-out;
+      &:hover {
+        background-position: left;
+        color: #fff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    font-size: 1.2rem;
+    svg {
+      font-size: 3rem;
+    }
+  }
+}

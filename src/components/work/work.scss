@@ -1,0 +1,43 @@
+.content {
+  flex-direction: column;
+  height: 100vh;
+
+  p {
+    text-align: center;
+  }
+}
+.githubrepos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .repo-item {
+    h4 {
+      margin: 0;
+      font-size: 1.5rem;
+
+      a:hover {
+        color: #f1f0d7;
+      }
+    }
+    border: 1px solid #000;
+    width: 20%;
+    padding: 1rem;
+    margin: 1rem;
+    position: relative;
+    text-align: center;
+
+    &__name {
+      line-height: 2rem;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .githubrepos {
+    flex-direction: column;
+    .repo-item {
+      width: 80%; // fix margin
+    }
+  }
+}

@@ -1,0 +1,66 @@
+.home {
+  margin: 0 4rem;
+  height: 100vh;
+  background: #d4d8e2;
+  padding: 6rem;
+
+  .Typewriter__wrapper {
+    font-size: 6rem;
+    font-weight: 400;
+    margin: 0;
+    font-family: Eugusto;
+    color: #75696b;
+  }
+
+  .Typewriter__cursor {
+    font-size: 5rem;
+    color: #75696b;
+  }
+
+  &__description {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  &__icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .icon {
+      margin-top: 2rem;
+      display: block;
+      text-align: center;
+      font-size: 5rem;
+      color: #75696b;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    margin: 0;
+    padding: 4rem;
+
+    .Typewriter__wrapper {
+      font-size: 3rem;
+    }
+
+    .Typewriter__cursor {
+      font-size: 3rem;
+    }
+
+    &__text {
+      &--description {
+        font-size: 1.25rem;
+      }
+    }
+
+    &__icons {
+      .icon {
+        font-size: 4rem;
+      }
+    }
+  }
+}

@@ -1,11 +1,10 @@
 import './App.scss';
-import { Routes, Route, useLocation, Router } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import Work from './components/work/Work';
-import AnimatedRoutes from './components/animatedPage/AnimatedPage';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {

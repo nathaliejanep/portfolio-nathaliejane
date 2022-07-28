@@ -66,6 +66,7 @@
   }
   .top-nav__menu {
     ul {
+      margin-top: 0;
       position: absolute;
       top: 60px;
       left: 0;
@@ -73,7 +74,7 @@
       flex-direction: column;
       justify-content: space-evenly;
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
       background-color: #d4d8e2;
       display: none;
 

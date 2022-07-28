@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { NavLink } from 'react-router-dom';
 import './nav.scss';
+import CV from '../../assets/files/Nathalie_CV.pdf';
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(false);
@@ -55,6 +56,11 @@ const Nav = () => {
               <NavLink activeclassname="active" className="link" to="/contact">
                 CONTACT
               </NavLink>
+            </li>
+            <li>
+              <a href={CV} className="cv-button" target="blank">
+                CV
+              </a>
             </li>
           </ul>
         </div>

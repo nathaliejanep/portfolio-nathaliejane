@@ -3,8 +3,8 @@ import Me from '../../assets/images/nathalie.jpeg';
 
 const About = () => {
   return (
-    <div className='container about'>
-      <div className='left'>
+    <div className="container about">
+      <div className="left">
         <h2>Hello.</h2>
         <p>
           I'm Nathalie Persson Enriquez, 28 years old. Originally from Sweden,
@@ -29,8 +29,8 @@ const About = () => {
           backend.
         </p>
       </div>
-      <div className='right'>
-        <img src={Me} alt='Nathalie' className='img' />
+      <div className="right">
+        <img src={Me} alt="Nathalie" className="img" />
       </div>
     </div>
   );

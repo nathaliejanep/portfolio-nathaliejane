@@ -2,6 +2,7 @@
   .right {
     padding: 0;
   }
+
   .left {
     line-height: 2rem;
     box-sizing: border-box;
@@ -11,5 +12,12 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+  }
+
+  .cv {
+    font-weight: 600;
+    &:hover {
+      color: #7cc5c5;
+    }
   }
 }

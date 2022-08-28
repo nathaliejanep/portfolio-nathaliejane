@@ -4,7 +4,6 @@ import Layout from './components/layout/Layout';
 import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
-import Work from './components/work/Work';
 import { AnimatePresence } from 'framer-motion';
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="work" element={<Work />} />
             <Route path="contact" element={<Contact />} />
           </Route>
         </Routes>

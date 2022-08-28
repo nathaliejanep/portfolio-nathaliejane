@@ -48,11 +48,6 @@ const Nav = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink activeclassname="active" className="link" to="/work">
-                WORK
-              </NavLink>
-            </li>
-            <li>
               <NavLink activeclassname="active" className="link" to="/contact">
                 CONTACT
               </NavLink>

@@ -1,5 +1,5 @@
 import './about.scss';
-import Me from '../../assets/images/nathalie.jpeg';
+import Me from '../../assets/images/nathalie.png';
 import CV from '../../assets/files/Nathalie_CV.pdf';
 
 const About = () => {
@@ -8,28 +8,22 @@ const About = () => {
       <div className="left">
         <h2>Hello.</h2>
         <p>
-          I'm Nathalie, born in Sweden, Gothenburg. I decided to move to the
-          mountains in Switzerland, Verbier where I am currently based.
-        </p>
-        <p>
-          I've been working as a Restaurant Manager for 5 years. One of the many
-          reasons I moved to Verbier is that I've always wanted to learn how to
-          ski. Today, I'm proud to say that I'm great at skiing. It taught me
-          that any skill can be learned if you put some effort into it.
+          {/* I'm Nathalie, born in Sweden, Gothenburg. I decided to move to the
+          mountains in Switzerland, Verbier where I am currently based. */}
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
+          dolore distinctio cumque cupiditate asperiores deserunt! Inventore
+          dolore impedit excepturi ex molestias, repellendus perferendis
+          nesciunt deserunt reprehenderit eos, quisquam tempora provident.
+          Voluptate ex dolores commodi corrupti magnam similique, autem quaerat
+          optio natus asperiores fuga minima perferendis officia facere
+          perspiciatis quos.
         </p>
 
         <p>
-          My aim today is to become a great Developer. I have always had an
-          interest for technology and coding. I'm currently studying Frontend
-          Development remotely at Medieinstituet where I am deepening my
-          knowledge of coding. I like to do versatile work and really enjoy the
-          borders between design and frontend.
-        </p>
-        <p>
-          Check out my{' '}
+          Check out my
           <a href={CV} className="cv" target="blank">
             CV
-          </a>{' '}
+          </a>
           and let's get in touch!
         </p>
       </div>

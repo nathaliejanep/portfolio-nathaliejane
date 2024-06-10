@@ -33,7 +33,6 @@ const Contact = () => {
   return (
     <div className="container left">
       <div className="left">
-        <h2>Get in touch.</h2>
         <div className="info">
           <FontAwesomeIcon icon={faPhone} />
           <a href="tel:0041766194431" className="info">
@@ -48,9 +47,15 @@ const Contact = () => {
         </div>
       </div>
       <div className="right">
-        <h2>Say something.</h2>
+        <h2>Get in touch.</h2>
+        <p>
+          Seeking opportunities to learn, grow, and contribute as a junior
+          developer! If you're offering internships or have advice to share, I'm
+          all ears.Excited to explore possibilities and take the next step in my
+          journey. Let's chat!
+        </p>
         <div className="right_wrapper">
-          <form ref={form} onSubmit={sendEmail} className="form">
+          {/* <form ref={form} onSubmit={sendEmail} className="form">
             <input
               type="text"
               className="form-input"
@@ -81,7 +86,7 @@ const Contact = () => {
               required
             />
             <input type="submit" className="form-button" value="SUBMIT" />
-          </form>
+          </form> */}
         </div>
       </div>
     </div>

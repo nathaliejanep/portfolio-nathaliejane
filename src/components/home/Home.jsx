@@ -1,12 +1,9 @@
 import './home.scss';
 import Typewriter from 'typewriter-effect';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faAngular,
-  faJs,
-  faNode,
-  faReact,
-} from '@fortawesome/free-brands-svg-icons';
+import reactLogo from '../../assets/icons/react.svg';
+import typescriptLogo from '../../assets/icons/typescript.svg';
+import nodejsLogo from '../../assets/icons/nodejs.svg';
+import cssLogo from '../../assets/icons/css.svg';
 const Home = () => {
   return (
     <div className="home">
@@ -15,11 +12,9 @@ const Home = () => {
           hideCursorafterText: true,
         }}
         onInit={(typewriter) => {
-          typewriter
-            .typeString("I'm a <br/> Frontend Developer.")
-            .stop()
-            .start();
+          typewriter.typeString("I'm Nathalie.").stop().start();
         }}
+        delay={1}
       />
 
       <p className="home__description">
@@ -29,20 +24,20 @@ const Home = () => {
         Eager to learn and looking for new challenges.
       </p>
 
-      <div className="home__icons">
-        <div className="icon">
-          <FontAwesomeIcon icon={faJs} />
-        </div>
-        <div className="icon">
-          <FontAwesomeIcon icon={faReact} />
-        </div>
-        <div className="icon">
-          <FontAwesomeIcon icon={faAngular} />
-        </div>
-        <div className="icon">
-          <FontAwesomeIcon icon={faNode} />
-        </div>
-      </div>
+      <ul className="home__icons">
+        <li className="icon">
+          <img src={reactLogo} alt="" />
+        </li>
+        <li className="icon">
+          <img src={typescriptLogo} alt="" />
+        </li>
+        <li className="icon">
+          <img src={nodejsLogo} alt="" />
+        </li>
+        <li className="icon">
+          <img src={cssLogo} alt="css logo" />
+        </li>
+      </ul>
     </div>
   );
 };

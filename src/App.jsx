@@ -5,6 +5,7 @@ import Home from './components/home/Home';
 import About from './components/about/About';
 import Contact from './components/contact/Contact';
 import { AnimatePresence } from 'framer-motion';
+import { Projects } from './components/projects/Projects';
 
 function App() {
   const location = useLocation();
@@ -14,6 +15,7 @@ function App() {
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
+            <Route path="projects" element={<Projects />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
           </Route>

@@ -1,0 +1,21 @@
+.projects {
+  margin: 0 4rem;
+  background-color: #1c1525;
+  padding: 2rem;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .projects {
+    margin: 0;
+    &__wrapper {
+      flex-direction: row;
+    }
+  }
+}

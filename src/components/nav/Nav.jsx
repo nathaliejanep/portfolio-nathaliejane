@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +9,9 @@ import CV from '../../assets/files/Nathalie_CV.pdf';
 
 const Nav = () => {
   const [toggleNav, setToggleNav] = useState(false);
+
+  const { pathname } = useLocation();
+
   // create a responsive navigation bar
   let elementsArray = document.querySelectorAll('.link');
 
@@ -20,7 +24,9 @@ const Nav = () => {
     <>
       <nav className="top-nav">
         <NavLink className="link" to="/">
-          <h1 className="logo">Nathalie Jane</h1>
+          <h1 className="logo">
+            {pathname === '/' ? '/fullstack dev' : pathname}.
+          </h1>
         </NavLink>
         <div className="toggle-nav"></div>
         <FontAwesomeIcon
@@ -40,6 +46,11 @@ const Nav = () => {
                 to="/"
               >
                 HOME
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeclassname="active" className="link" to="/projects">
+                PROJECTS
               </NavLink>
             </li>
             <li>

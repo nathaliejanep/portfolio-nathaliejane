@@ -1,20 +1,21 @@
 .home {
   margin: 0 4rem;
   height: 100vh;
-  background: #d4d8e2;
+  background-color: #1c1525;
   padding: 6rem;
 
   .Typewriter__wrapper {
-    font-size: 6rem;
+    position: relative;
+    font-size: 4rem;
     font-weight: 400;
     margin: 0;
-    font-family: Eugusto;
-    color: #75696b;
+    font-family: Karla;
+    color: #d3d3d3;
   }
 
   .Typewriter__cursor {
     font-size: 5rem;
-    color: #75696b;
+    color: #d3d3d3;
   }
 
   &__description {
@@ -22,18 +23,35 @@
     line-height: 2rem;
   }
 
+  // TODO ändra mobil
   &__icons {
+    list-style-type: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     .icon {
       margin-top: 2rem;
-      display: block;
-      text-align: center;
-      font-size: 5rem;
-      color: #75696b;
+      opacity: 0; /* Initially hide the icons */
+      animation: rollIn 1.5s 1.5s forwards; /* Added a delay of 1 second */
+      position: relative; /* Necessary for the animation to take effect */
+
+      @keyframes rollIn {
+        0% {
+          transform: translateX(-100px) rotate(-360deg);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0px) rotate(0deg);
+          opacity: 1;
+        }
+      }
+
+      img {
+        width: 100px;
+      }
     }
   }
 }

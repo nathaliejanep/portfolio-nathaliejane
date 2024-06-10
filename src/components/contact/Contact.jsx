@@ -1,34 +1,34 @@
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import { faAt, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useRef } from 'react';
+// import { useRef } from 'react';
 import './contact.scss';
 
 const Contact = () => {
-  const form = useRef();
+  // const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_c62bv04',
-        'template_w0dbjcf',
-        form.current,
-        'Gom3N4Uo4CeQek_0T'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          alert('Message sent!');
-        },
-        (error) => {
-          console.log(error.text);
-          alert('Failed to send the message, please try again');
-        }
-      );
-    e.target.reset();
-  };
+  //   emailjs
+  //     .sendForm(
+  //       'service_c62bv04',
+  //       'template_w0dbjcf',
+  //       form.current,
+  //       'Gom3N4Uo4CeQek_0T'
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         alert('Message sent!');
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //         alert('Failed to send the message, please try again');
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   return (
     <div className="container left">

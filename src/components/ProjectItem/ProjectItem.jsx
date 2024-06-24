@@ -22,14 +22,16 @@ const ProjectItem = ({
               ))}
             </div>
 
-            <a
-              href={linkLive}
-              target="_blank"
-              rel="noreferrer"
-              className="projects__item-button"
-            >
-              Live Demo
-            </a>
+            {linkLive && (
+              <a
+                href={linkLive}
+                target="_blank"
+                rel="noreferrer"
+                className="projects__item-button"
+              >
+                Live Demo
+              </a>
+            )}
 
             <a
               href={linkGithub}
@@ -43,7 +45,8 @@ const ProjectItem = ({
         </div>
       </div>
       <h3>{title}</h3>
-      <p className="projects__item-description">{description}</p>
+      <p dangerouslySetInnerHTML={{ __html: description }} />
+      {/* <p className="projects__item-description">{description}</p> */}
     </div>
   );
 };

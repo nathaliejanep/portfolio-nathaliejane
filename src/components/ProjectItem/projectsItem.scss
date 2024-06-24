@@ -33,6 +33,11 @@
     // background-color: rgba(146, 122, 197, 0.658);
   }
 
+  &-container:hover &-info {
+    visibility: visible;
+    opacity: 1;
+  }
+
   &-info {
     width: 100%;
     display: flex;
@@ -52,11 +57,7 @@
 
   &-description {
     margin: 0;
-  }
-
-  &:hover &-info {
-    visibility: visible;
-    opacity: 1;
+    text-align: left;
   }
 
   &-icons {

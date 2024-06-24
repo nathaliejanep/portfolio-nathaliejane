@@ -18,10 +18,10 @@ const Home = () => {
       />
 
       <p className="home__description">
-        Creative developer student with a passion for technology and design.
+        Creative developer student with a passion for blockchain technology.
         <br />
-        Developing attractive and and user-friendly webpages and applications.
-        Eager to learn and looking for new challenges.
+        Developing attractive, secure, transparent and efficient solutions.
+        Eager to learn, contribute and taking on new challenges.
       </p>
 
       <ul className="home__icons">

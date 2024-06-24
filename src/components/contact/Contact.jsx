@@ -51,8 +51,8 @@ const Contact = () => {
         <p>
           Seeking opportunities to learn, grow, and contribute as a junior
           developer! If you're offering internships or have advice to share, I'm
-          all ears.Excited to explore possibilities and take the next step in my
-          journey. Let's chat!
+          all ears. Excited to explore possibilities and take the next step in
+          my journey. Let's chat!
         </p>
         <div className="right_wrapper">
           {/* <form ref={form} onSubmit={sendEmail} className="form">
